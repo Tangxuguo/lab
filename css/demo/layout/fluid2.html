@@ -1,0 +1,35 @@
+<config>
+{
+	"title": "右栏固定，左栏自适应布局"
+}
+</config>
+<style>
+* { margin: 0; padding: 0;}
+.clearfix { *zoom: 1;}
+.clearfix:after{ content: ""; display: block; height: 0; visibility:hidden; clear: both;}
+#header{ width: 96%; height: 90px; margin: 0 auto; background: #f60;}
+#body{ width: 96%; margin: 0 auto;}
+#main{ float: left; width: 100%; background: orange;}
+#main .inner{ padding-right: 240px;}
+#aside{ float: left; width: 240px; margin-left: -240px; background: #ccc;}
+#footer{ width: 96%; height: 90px; margin: 0 auto; background: #08f;}
+</style>
+
+<div id="wrapper">
+	<div id="header">header</div>
+	<div id="body" class="clearfix">
+		<div id="main">
+			<div class="inner">
+				main
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+		<div id="aside">
+			<div class="inner">
+				aside
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+	</div>
+	<div id="footer">footer</div>
+</div>
